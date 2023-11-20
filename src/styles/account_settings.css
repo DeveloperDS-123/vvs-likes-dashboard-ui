@@ -1,0 +1,55 @@
+.account-settings {
+    background-color: #F3F3F3;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.account-settings-table {
+    background-color: #FFF;
+    padding: 20px 30px;
+    width: 60%;
+    margin: auto;
+}
+
+.account-settings-table h2{
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 2px solid #F3F3F3;
+}
+
+.account-settings-table-row1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-bottom: 2px solid #F3F3F3;
+    text-align: left;
+}
+
+
+.account-settings-table-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    text-align: left;
+}
+
+.account-settings input[type="text"] {
+    padding: 7px;
+}
+
+.account-settings button {
+    background-color: #C7F3cf;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    color: #FFF;
+    margin-bottom: 1rem;
+}
+
+.account-settings label{
+    font-weight: 600;
+}

@@ -1,0 +1,82 @@
+.subscription-container{
+    background-color: #F3F3F3;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.subscription-table {
+    background-color: #FFF;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.subscription-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #F3F3F3;
+}
+
+.subscription-btn {
+    background-color: #1ED65A;
+    border-radius: 30px;
+    padding: 5px 30px;
+    line-height: 0px;
+    height: 50px;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    font-weight: 500;
+}
+
+
+.subscriptionTableImage{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+table{
+    width: 100%;
+}
+
+table thead tr th {
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #909090;
+    border-bottom: 2px solid #F3F3F3;
+}
+
+tbody tr td{
+    border-bottom: 2px solid #F3F3F3;
+}
+
+.user{
+    display: flex;
+    gap: 20px;
+}
+
+.subscriptionLikes{
+    text-align: left;
+}
+
+.subscriptionPrice{
+    text-align: left;
+}
+
+.nextbillingdate{
+    text-align: left;
+}
+
+.manageBtn{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}

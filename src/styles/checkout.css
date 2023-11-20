@@ -1,0 +1,74 @@
+.checkout{
+    background-color: #F3F3F3;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.checkout-container{
+    display: flex;
+    gap: 2rem;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+.checkout-left-section{
+    background-color: #FFF;
+    width: 50%;
+    height: 80%;
+    padding: 2rem;
+}
+
+.checkout-right-section{
+    width: 40%;
+    padding: 1rem;
+}
+
+.checkout-left-section-header-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkout-left-section-header{
+    border-bottom: 2px solid #F3F3F3;
+}
+
+.payment-types{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+
+.checkout-right-section-header{
+    border-bottom: 2px solid #C6C6C6;
+    margin: 0px;
+}
+
+
+.checkout-right-section-header p{
+    text-align: left;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.checkout .credits-package{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout .price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #C6C6C6;
+}
+
+.checkout .total{
+    display: flex;
+    justify-content: space-between;
+}
