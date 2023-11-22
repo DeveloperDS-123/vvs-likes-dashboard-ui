@@ -3,7 +3,9 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import ChangeUsernameModal from '../changeUsernameModal';
+import manageIcon from "../../../assets/svgs/manage-icon.svg";
 import ManageSubscriptionModal from '../manageSubscriptionModal';
+import { MdArrowForwardIos } from "react-icons/md";
 
 const style = {
     position: 'absolute',
@@ -27,23 +29,29 @@ function ManageAccountModal() {
 
     return (
         <React.Fragment>
-            <Button onClick={handleOpen}>Manage</Button>
+            <Button onClick={handleOpen} style={manageBtnStyle}><img src={manageIcon} /> Manage</Button>
+
             <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="child-modal-title"
                 aria-describedby="child-modal-description"
             >
-                <Box sx={{ ...style, width: 200 }}>
+                <Box sx={{ ...style, width: 300, border: 'none', borderRadius: '5px' }}>
                     <div style={modalHeader}>
-                    <p>indigenousenterprise</p>
-                    <h2 id="child-modal-title">Manage account</h2>
+                        {/* <img src={manageIcon} style={{ marginTop: '-30px' }} /> */}
+                        {/* <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/geography.png" alt="geography" style={{ marginTop: '-40px' }}/> */}
+                        <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/europe.png" alt="europe" style={{ marginTop: '-60px' }} />
+                        <div style={{padding:"10px 0"}}>
+                            <p style={{ margin: '0px' ,color:'#676767',fontWeight:'600'}}>indigenousenterprise</p>
+                            <h2 id="child-modal-title" style={manageAccountHeading}>Manage account</h2>
+                        </div>
                     </div>
-                    <p id="child-modal-description">
-                        <ChangeUsernameModal />
+                    <p id="child-modal-description" style={changeUsernameModalWrapper}>
+                        <ChangeUsernameModal /><MdArrowForwardIos style={{ marginRight: '5px' }} />
                     </p>
-                    <p id="child-modal-description" >
-                        <ManageSubscriptionModal />
+                    <p id="child-modal-description" style={manageSubscriptionModalWrapper}>
+                        <ManageSubscriptionModal /><MdArrowForwardIos style={{ marginRight: '5px' }} />
                     </p>
                 </Box>
             </Modal>
@@ -62,5 +70,37 @@ const modalHeader = {
 const modalsWrapper = {
     border: '1px solid black',
     borderRadius: '10px'
+}
+
+const manageBtnStyle = {
+    border: "1px solid black",
+    borderRadius: "30px",
+    padding: '10px 30px',
+    gap: "5px",
+    textTransform: "none",
+    color: "#122250",
+    fontWeight: "bold"
+}
+
+const manageAccountHeading = { margin: '0px',fontSize:"22px" }
+
+const changeUsernameModalWrapper = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    border: '1px solid #D4D9E4',
+    borderRadius: '20px',
+    padding: '3px',
+    backgroundColor: '#F7F9FF'
+}
+
+const manageSubscriptionModalWrapper = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    border: '1px solid #D4D9E4',
+    borderRadius: '20px',
+    padding: '3px',
+    backgroundColor: '#F7F9FF'
 }
 export default ManageAccountModal;

@@ -51,7 +51,7 @@ function Subscription() {
                                         <td><p className='nextbillingdate'>{item.nextBillingDate}</p></td>
 
                                         {/* <td><button className='manageBtn' onClick={() => console.log("manageBtn")}><img src={manageIcon} />{item.manageBtn}</button></td> */}
-                                        <td style={{border:"1px solid black",borderRadius:"30px"}}><img src={manageIcon} /><ManageAccountModal  onClick={handleOpen}  open={open} onClose={handleClose} /></td>
+                                        <td><ManageAccountModal  onClick={handleOpen}  open={open} onClose={handleClose} /></td>
                                     </tr>
                                 })}
 

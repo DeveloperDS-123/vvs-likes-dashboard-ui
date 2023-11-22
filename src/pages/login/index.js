@@ -30,7 +30,7 @@ function Login() {
     };
     return (
         <>
-            <Header/>
+            <Header />
 
             <div className='login-container'>
                 <ThemeProvider theme={defaultTheme}>
@@ -52,6 +52,7 @@ function Login() {
                             </Typography>
                             <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
                                 <TextField
+                                    size="small"
                                     margin="normal"
                                     required
                                     fullWidth
@@ -62,6 +63,7 @@ function Login() {
                                     autoFocus
                                 />
                                 <TextField
+                                    size="small"
                                     margin="normal"
                                     required
                                     fullWidth
@@ -81,8 +83,8 @@ function Login() {
                                         />
                                     </Grid>
 
-                                    <Grid item xs  sx={{ mt: 1}}>
-                                        <Link href="#" variant="body2" style={{ textDecoration: "none" ,fontWeight: "700" }}>
+                                    <Grid item xs sx={{ mt: 1 }}>
+                                        <Link href="#" variant="body2" style={{ textDecoration: "none", fontWeight: "700" }}>
                                             Forgot password?
                                         </Link>
                                     </Grid>
@@ -94,7 +96,7 @@ function Login() {
                                     fullWidth
                                     variant="contained"
                                     style={{ backgroundColor: "#1ED65A" }}
-                                    sx={{ mt: 3, mb: 2 }}
+                                    sx={{ mt: 3, mb: 2, textTransform: "none" }}
                                 >
                                     Log in
                                 </Button>
@@ -118,7 +120,7 @@ function Login() {
 
                             </Box>
                         </Box>
-                       
+
                     </Container>
                 </ThemeProvider>
             </div>

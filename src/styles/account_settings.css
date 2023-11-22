@@ -15,7 +15,7 @@
 .account-settings-table h2{
     text-align: left;
     margin: 0px;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 2px solid #F3F3F3;
 }
 
@@ -38,6 +38,8 @@
 
 .account-settings input[type="text"] {
     padding: 7px;
+    border: 1px solid #DCD5DE;
+    border-radius: 5px;
 }
 
 .account-settings button {
@@ -47,9 +49,30 @@
     border-radius: 20px;
     width: 150px;
     color: #FFF;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .account-settings label{
     font-weight: 600;
+}
+
+.account-settings .label1{
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.account-settings .label2{
+    padding: 10px 0;
+    margin-top: 1rem;
+    margin-bottom: -50px;
+}
+
+
+.save-email-btn{
+    margin: 10px 0 1.5rem 0;
+}
+
+.save-password-btn{
+    margin: 1.7rem 0 1rem 0;
 }
